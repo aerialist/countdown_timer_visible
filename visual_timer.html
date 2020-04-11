@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual countdown timer</title>
+    <link rel="stylesheet" href="visual_timer.css">
+</head>
+<body>
+    <div id='mydiv'>
+        <svg id='mysvg' height="300" width="300">
+          <ellipse id='myellipse' class='dark' cx="150" cy="150" rx="110" ry="110"/>
+          <path id='myd' d="M150,150 L150,50 A100,100 0 0,1 208,230z"/>
+        </svg>
+    </div>
+    
+<script src="anime.min.js"></script>
+<script src='visual_timer.js'></script>
+</body>
+</html>
