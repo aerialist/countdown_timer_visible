@@ -1,0 +1,35 @@
+.test{
+  border: solid;
+  background-color: antiquewhite;
+}
+.dark {
+    fill: none;
+    stroke: #595757;
+    stroke-width:10;
+}
+.empty{
+  fill: none;
+}
+.stopped{
+  fill: #595757;
+  color: #595757;
+}
+.running{
+  fill: #D9151B;
+  color: #D9151B;
+}
+/* https://chartio.com/resources/tutorials/how-to-resize-an-svg-when-the-window-is-resized-in-d3-js/ */
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+  vertical-align: top;
+  overflow: hidden;
+}
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

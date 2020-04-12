@@ -2,19 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Visual countdown timer</title>
-    <link rel="stylesheet" href="visual_timer.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/visual_timer.css">
 </head>
 <body>
-    <div id='mydiv'>
-        <svg id='mysvg' height="300" width="300">
-          <ellipse id='myellipse' class='dark' cx="150" cy="150" rx="110" ry="110"/>
-          <path id='myd' d="M150,150 L150,50 A100,100 0 0,1 208,230z"/>
-        </svg>
+    <div class="container">
+        <div class="row" id='mydiv'>
+            <div class="svg-container mx-auto">
+                <svg id='mysvg' class="svg-content" viewBox="0 0 230 230"  preserveAspectRatio="xMinYMin meet">
+                    <ellipse id='myellipse' class='dark' cx="115" cy="115" rx="110" ry="110"/>
+                    <path id='rightpath' class='stopped' d="M115,115 L115,15 A100,100 0 0,1 115,215z"/>
+                    <path id='leftpath' class='stopped' d="M115,115 L115,215 A100,100 0 0,1 115,215z"/>
+                  </svg>     
+            </div>
+        </div>
+        <div class="row mx-auto">
+            <h1 id="timeleft" class="stopped mx-auto">15:00</h1>
+        </div>
+        <div class="form-row">
+            <div class="input-group mx-auto" style="width: 300px;">
+                <div class="input-group-prepend">
+                    <button id='play' class="btn btn-outline-secondary" type="button">Start</button>
+                </div>
+                <input id='timeinput' class="form-control" type="range" step="1.0" min="1" max="60" value="15">
+            </div>
+        </div>   
     </div>
-    
-<script src="anime.min.js"></script>
-<script src='visual_timer.js'></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src='js/visual_timer.js'></script>
 </body>
 </html>
