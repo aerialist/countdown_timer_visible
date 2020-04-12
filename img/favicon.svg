@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="mysvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="230px" height="230px" viewBox="0 0 230 230" style="enable-background:new 0 0 230 230;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#595757;stroke-width:10;}
+	.st1{fill:#D9151B;}
+</style>
+<ellipse id="myellipse" class="st0" cx="115" cy="115" rx="110" ry="110"/>
+<path id="rightpath" class="st1" d="M115,115V15c55.2,0,100,44.8,100,100H115z"/>
+</svg>
